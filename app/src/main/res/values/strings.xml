@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">projectEcoCycle</string>
+    <string name="tv_heading">EcoCycle</string>
+    <string name="tv_subheading">Masuk atau Daftar</string>
+    <string name="tv_inputemail">Email</string>
+    <string name="tv_tombolselanjutnya">Selanjutnya</string>
+    <string name="tv_opsiAtau">Atau</string>
+    <string name="tv_googleSignIn">Lanjutkan dengan Google</string>
+    <string name="tv_daftaroption">Daftar</string>
+    <string name="tv_inputnamapengguna">Nama Pengguna</string>
+    <string name="tv_inputsandi">Sandi</string>
+    <string name="tv_inputkonfirmasisandi">Konfirmasi Sandi</string>
+    <string name="tv_registerbtn">Register</string>
+    <string name="tv_masuktxt">Masuk</string>
+    <string name="tv_konfirmasibtn">Konfirmasi</string>
+    <string name="tv_lupasandi">Lupa kata sandi?</string>
+
+
+</resources>

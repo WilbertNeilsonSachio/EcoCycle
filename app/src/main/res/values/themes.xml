@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProjectEcoCycle" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ProjectEcoCycle" parent="Base.Theme.ProjectEcoCycle" />
+    <style name="tombolMasuk">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="backgroundTint">@color/persianblue</item>
+    </style>
+
+    <style name="borderEditText">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="backgroundTint">@color/grey</item>
+    </style>
+
+    <style name="subheadingtext">
+        <item name="android:textColor">@color/semiblack</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">27sp</item>
+    </style>
+</resources>

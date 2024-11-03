@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".LoginPage">
+
+    <ImageView
+        android:id="@+id/logoEcoCycle"
+        android:src="@drawable/ecocycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_subheading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_subheading"
+        android:text="@string/tv_subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logoEcoCycle"
+        app:layout_constraintBottom_toTopOf="@id/tv_inputemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        style="@style/subheadingtext"
+        />
+
+    <EditText
+        android:id="@+id/tv_inputemail"
+        android:text="@string/tv_inputemail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/semiblack"
+        style="@style/borderEditText"
+        android:fontFamily="@font/montserrat"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/tv_tombolselanjutnya"
+        android:text="@string/tv_tombolselanjutnya"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/royalblue"
+        app:layout_constraintTop_toBottomOf="@id/tv_inputemail"
+        app:layout_constraintBottom_toTopOf="@id/tv_opsiAtau"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_opsiAtau"
+        android:text="@string/tv_opsiAtau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tombolselanjutnya"
+        app:layout_constraintBottom_toTopOf="@id/tv_googleSignIn"
+        android:textColor="@color/semiblack"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:padding="6dp"/>
+
+    <EditText
+        android:id="@+id/tv_googleSignIn"
+        android:text="@string/tv_googleSignIn"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/devicon_google"
+        android:paddingStart="20dp"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_opsiAtau"
+        app:layout_constraintBottom_toTopOf="@id/tv_daftaroption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/semiblack"
+        style="@style/borderEditText"
+        android:fontFamily="@font/montserrat"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/tv_daftaroption"
+        android:text="@string/tv_daftaroption"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/royalblue"
+        app:layout_constraintTop_toBottomOf="@id/tv_googleSignIn"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
