@@ -98,8 +98,7 @@
         android:textColor="@color/semiblack"
         style="@style/borderEditText"
         android:fontFamily="@font/montserrat"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp"    />
 
     <Button
         android:id="@+id/tv_daftaroption"
