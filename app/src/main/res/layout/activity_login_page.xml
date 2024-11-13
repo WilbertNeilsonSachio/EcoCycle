@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp"
+    android:background="@drawable/background"
     tools:context=".LoginPageActivity">
 
     <ImageView
@@ -30,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         style="@style/subheadingtext"
         />
 
@@ -97,8 +98,7 @@
         android:textColor="@color/semiblack"
         style="@style/borderEditText"
         android:fontFamily="@font/montserrat"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp"    />
 
     <Button
         android:id="@+id/tv_daftaroption"
