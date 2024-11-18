@@ -14,6 +14,15 @@
     <string name="tv_masuktxt">Masuk</string>
     <string name="tv_konfirmasibtn">Konfirmasi</string>
     <string name="tv_lupasandi">Lupa kata sandi?</string>
+    <string name="tv_koinsampah">Koin Sampah</string>
+    <string name="tv_tukarbtn">Tukar</string>
+    <string name="tv_misiharian">Misi Harian</string>
+    <string name="tv_rasiomisiharian">00/10</string>
+    <string name="tv_kategorisampahtext">Kategori Sampah</string>
+    <string name="tv_plastiktext">Plastik</string>
+    <string name="tv_kertaskardustext">Kertas/Kardus</string>
+    <string name="tv_kacatext">Kaca</string>
+
 
 
 </resources>
