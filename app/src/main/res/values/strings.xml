@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">projectEcoCycle</string>
+    <string name="app_name">EcoCycle</string>
     <string name="tv_heading">EcoCycle</string>
     <string name="tv_subheading">Masuk atau Daftar</string>
     <string name="tv_inputemail">Email</string>
