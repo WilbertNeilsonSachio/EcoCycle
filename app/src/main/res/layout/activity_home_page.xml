@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:background="@color/greybg">
+
+    <ImageView
+        android:id="@+id/lataratas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-6dp"
+        android:src="@drawable/upasset"/>
+
+    <ImageView
+        android:id="@+id/whiteecocycle"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logoputih"/>
+
+    <ImageView
+        android:id="@+id/notificon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/icon_notif"
+        />
+
+    <ImageView
+        android:id="@+id/whitebg_mission"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/background_misi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"/>
+
+    <ImageView
+        android:id="@+id/logokoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logokoin"
+        app:layout_constraintStart_toStartOf="@id/whitebg_mission"
+        app:layout_constraintTop_toTopOf="@id/whitebg_mission" />
+
+    <TextView
+        android:id="@+id/koinsampah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        style="@style/normaltext"
+        android:text="@string/tv_koinsampah"
+        app:layout_constraintStart_toEndOf="@id/logokoin"
+        app:layout_constraintTop_toTopOf="@id/whitebg_mission" />
+
+    <Button
+        android:id="@+id/tv_tukarbtn"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/royalblue"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/tv_tukarbtn"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/whitebg_mission"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toEndOf="@id/koinsampah"
+        app:layout_constraintTop_toTopOf="@id/whitebg_mission" />
+
+    <TextView
+        android:id="@+id/misiharian"
+        android:text="@string/tv_misiharian"
+        style="@style/normaltext"
+        app:layout_constraintStart_toStartOf="@id/whitebg_mission"
+        app:layout_constraintTop_toBottomOf="@id/logokoin"
+        app:layout_constraintBottom_toTopOf="@id/garimisi"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/garimisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/garismisi"
+        app:layout_constraintStart_toStartOf="@id/whitebg_mission"
+        app:layout_constraintEnd_toStartOf="@id/rasiomisiharian"
+        app:layout_constraintTop_toBottomOf="@id/misiharian" />
+
+    <TextView
+        android:id="@+id/rasiomisiharian"
+        android:text="@string/tv_rasiomisiharian"
+        style="@style/normaltext"
+        app:layout_constraintStart_toEndOf="@id/garimisi"
+        app:layout_constraintEnd_toEndOf="@id/whitebg_mission"
+        app:layout_constraintTop_toBottomOf="@id/misiharian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/kategorisampahtext"
+        android:text="@string/tv_kategorisampahtext"
+        style="@style/normaltext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/whitebg_mission"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/plastikbtn"
+        android:src="@drawable/plastikbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/kertaskardusbtn"
+        app:layout_constraintTop_toBottomOf="@id/kategorisampahtext"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/plastiktext"
+        android:text="@string/tv_plastiktext"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        style="@style/normaltext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/kertaskardustext"
+        app:layout_constraintTop_toBottomOf="@id/plastikbtn"/>
+
+    <TextView
+        android:id="@+id/kertaskardustext"
+        android:text="@string/tv_kertaskardustext"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        style="@style/normaltext"
+        app:layout_constraintStart_toEndOf="@id/plastiktext"
+        app:layout_constraintEnd_toStartOf="@id/kacatext"
+        app:layout_constraintTop_toBottomOf="@id/kertaskardusbtn"
+        />
+
+    <TextView
+        android:id="@+id/kacatext"
+        android:text="@string/tv_kacatext"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        style="@style/normaltext"
+        app:layout_constraintStart_toEndOf="@id/kertaskardustext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kacabtn"/>
+
+    <ImageView
+        android:id="@+id/kertaskardusbtn"
+        android:src="@drawable/kertaskardusbtn"
+        app:layout_constraintStart_toEndOf="@id/plastikbtn"
+        app:layout_constraintEnd_toStartOf="@id/kacabtn"
+        app:layout_constraintTop_toBottomOf="@id/kategorisampahtext"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/kacabtn"
+        android:src="@drawable/kacabtn"
+        app:layout_constraintStart_toEndOf="@id/kertaskardusbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kategorisampahtext"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+<!--    <ImageButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
