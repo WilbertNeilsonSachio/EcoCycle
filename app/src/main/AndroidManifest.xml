@@ -23,9 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginPageActivity"
-            android:exported="true" >
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".LoadingPageActivity"
             android:exported="true">
