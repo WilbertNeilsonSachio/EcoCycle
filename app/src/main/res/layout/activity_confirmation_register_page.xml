@@ -33,11 +33,12 @@
 
     <EditText
         android:id="@+id/tv_inputsandi"
-        android:text="@string/tv_inputsandi"
+        android:hint="@string/tv_inputsandi"
         android:inputType="textVisiblePassword"
         android:paddingStart="24dp"
+        android:paddingEnd="24dp"
         android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +60,8 @@
         android:padding="8dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/royalblue"
-        app:layout_constraintTop_toBottomOf="@id/tv_inputsandi"       />
+        app:layout_constraintTop_toBottomOf="@id/tv_inputsandi"
+        />
 
     <TextView
         android:id="@+id/tv_lupasandi"
