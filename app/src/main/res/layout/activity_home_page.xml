@@ -424,6 +424,7 @@
         app:labelVisibilityMode="labeled"
         android:background="@color/white"
         app:itemIconTint="@color/softgrey"
+        app:itemTextColor="@color/softgrey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
