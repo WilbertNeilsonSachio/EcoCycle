@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-6dp"
+        android:layout_marginTop="-25dp"
         android:src="@drawable/upasset"/>
 
     <ImageView
@@ -41,7 +41,7 @@
         android:id="@+id/whitebg_mission"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="60dp"
         android:layout_marginLeft="22dp"
         android:layout_marginRight="22dp"
         app:cardCornerRadius="20dp"
@@ -69,7 +69,7 @@
                     android:id="@+id/logokoin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="18dp"
                     android:layout_marginTop="25dp"
                     android:src="@drawable/logo_coin"  />
 
@@ -105,7 +105,7 @@
                         android:id="@+id/misiharian"
                         android:text="@string/tv_misiharian"
                         style="@style/normaltext"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="18dp"
                         android:layout_marginTop="17sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
@@ -113,23 +113,25 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
+                    android:layout_height="54dp"
+                    android:orientation="horizontal">
+
                     <ImageView
                         android:id="@+id/garimisi"
                         android:layout_width="260dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="18dp"
                         android:layout_marginVertical="15dp"
+                        android:layout_marginStart="18dp"
                         android:src="@drawable/garismisi" />
+
                     <TextView
                         android:id="@+id/rasiomisiharian"
-                        android:text="@string/tv_rasiomisiharian"
                         style="@style/normaltext"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="7dp"/>
+                        android:layout_marginTop="7dp"
+                        android:text="@string/tv_rasiomisiharian" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -152,10 +154,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/kertaskardusbtn"
         app:layout_constraintTop_toBottomOf="@id/kategorisampahtext"
+        app:layout_constraintBottom_toTopOf="pl"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:layout_marginTop="10dp"
+        android:layout_marginStart="22dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp"/>
 
     <TextView
         android:id="@+id/plastiktext"
@@ -173,6 +177,7 @@
         app:layout_constraintStart_toEndOf="@id/plastikbtn"
         app:layout_constraintEnd_toStartOf="@id/kacabtn"
         app:layout_constraintTop_toBottomOf="@id/kategorisampahtext"
+        app:layout_constraintBottom_toTopOf="@id/kertaskardustext"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
@@ -180,14 +185,14 @@
 
     <TextView
         android:id="@+id/kertaskardustext"
-        android:text="@string/tv_kertaskardustext"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
         style="@style/normaltext"
-        app:layout_constraintStart_toEndOf="@id/plastiktext"
+        android:layout_width="62dp"
+        android:layout_height="46dp"
+        android:text="@string/tv_kertaskardustext"
+        app:layout_constraintBottom_toTopOf="@id/hargasampahtext"
         app:layout_constraintEnd_toStartOf="@id/kacatext"
-        app:layout_constraintTop_toBottomOf="@id/kertaskardusbtn"
-        />
+        app:layout_constraintStart_toEndOf="@id/plastiktext"
+        app:layout_constraintTop_toBottomOf="@id/kertaskardusbtn" />
 
     <ImageButton
         android:id="@+id/kacabtn"
@@ -195,7 +200,9 @@
         app:layout_constraintStart_toEndOf="@id/kertaskardusbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/kategorisampahtext"
+        app:layout_constraintBottom_toTopOf="@id/kacatext"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="22dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -208,6 +215,211 @@
         style="@style/normaltext"
         app:layout_constraintStart_toEndOf="@id/kertaskardustext"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hargasampahtext"
         app:layout_constraintTop_toBottomOf="@id/kacabtn"/>
+
+    <TextView
+        android:id="@+id/hargasampahtext"
+        android:text="@string/tv_hargasampahtext"
+        style="@style/normaltext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plastiktext"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/botolairmineralcard"
+            android:layout_width="109dp"
+            android:layout_height="129dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="26dp"
+            app:cardCornerRadius="5dp"
+            android:foregroundGravity="fill"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/kertasHVScard"
+            app:layout_constraintTop_toBottomOf="@id/hargasampahtext">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/gambarbotolairmienral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/botolairmineral" />
+
+                <TextView
+                    android:id="@+id/botolairmineraltext"
+                    style="@style/fontproduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_botolairmineraltext" />
+
+                <TextView
+                    android:id="@+id/hargabotolairmineral"
+                    style="@style/hargaproduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_hargabotolairmineraltext" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/tagbotolplastik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_tag"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tagplastik1"
+                        android:text="@string/tv_plastiktext"
+                        style="@style/tagtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kertasHVScard"
+        android:layout_width="109dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="5dp"
+        android:foregroundGravity="fill"
+        app:layout_constraintStart_toEndOf="@id/botolairmineralcard"
+        app:layout_constraintEnd_toStartOf="@id/Gelaskacacard"
+        app:layout_constraintTop_toBottomOf="@id/hargasampahtext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambarkertasHVS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/kertashvs" />
+
+            <TextView
+                android:id="@+id/kertasHVSext"
+                style="@style/fontproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_kertashvstext" />
+
+            <TextView
+                android:id="@+id/hargakertashvs"
+                style="@style/hargaproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_hargakertashvstext" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/tagkertashvs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_tag" />
+
+                <TextView
+                    android:id="@+id/tagkertas1"
+                    style="@style/tagtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_kertaskardustext" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Gelaskacacard"
+        android:layout_width="109dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        app:cardCornerRadius="5dp"
+        android:foregroundGravity="fill"
+        app:layout_constraintStart_toEndOf="@id/kertasHVScard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hargasampahtext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambargelaskaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/gelaskaca" />
+
+            <TextView
+                android:id="@+id/gelaskacatext"
+                style="@style/fontproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_gelaskacatext" />
+
+            <TextView
+                android:id="@+id/hargagelaskaca"
+                style="@style/hargaproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_hargagelaskacatext" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/taggelaskaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_tag" />
+
+                <TextView
+                    android:id="@+id/tagkaca1"
+                    style="@style/tagtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_kacatext" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

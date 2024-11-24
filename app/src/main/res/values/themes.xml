@@ -28,6 +28,36 @@
         <item name="fontFamily">@font/montserrat_semibold</item>
         <item name="color">@color/black</item>
         <item name="android:textSize">16sp</item>
-
     </style>
+
+    <style name="fontproduk">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/semiblack</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="hargaproduk">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/royalblue</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginStart">3dp</item>
+    </style>
+
+    <style name="satuankg">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/softgrey</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="tagtext">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">5sp</item>
+        <item name="android:textColor">@color/softgrey</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">2dp</item>
+    </style>
+
 </resources>
