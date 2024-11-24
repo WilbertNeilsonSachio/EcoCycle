@@ -60,4 +60,10 @@
         <item name="android:layout_marginStart">2dp</item>
     </style>
 
+    <style name="navbar_bottom">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/softgrey</item>
+    </style>
+
 </resources>
