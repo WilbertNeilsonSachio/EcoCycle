@@ -22,6 +22,15 @@
     <string name="tv_plastiktext">Plastik</string>
     <string name="tv_kertaskardustext">Kertas/Kardus</string>
     <string name="tv_kacatext">Kaca</string>
+    <string name="tv_hargasampahtext">Harga Sampah</string>
+    <string name="tv_botolairmineraltext">Botol air mineral</string>
+    <string name="tv_hargabotolairmineraltext">Rp.2.200</string>
+    <string name="tv_kertashvstext">Kertas HVS</string>
+    <string name="tv_hargakertashvstext">Rp.1.500</string>
+    <string name="tv_gelaskacatext">Gelas Kaca</string>
+    <string name="tv_hargagelaskacatext">Rp.3.500</string>
+    <string name="tv_satuankg">/kg</string>
+
 
 
 </resources>
