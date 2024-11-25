@@ -72,6 +72,10 @@
                     android:layout_marginStart="18dp"
                     android:layout_marginTop="25dp"
                     android:src="@drawable/logo_coin"  />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/koinsampah"
@@ -83,11 +87,30 @@
                     android:text="@string/tv_koinsampah"
                     app:layout_constraintStart_toEndOf="@id/logokoin"/>
 
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_jumlahkoin"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/royalblue">
+                        <TextView
+                            android:id="@+id/jumlah_koin"
+                            android:text="@string/tv_jumlahkoin"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
                 <Button
                     android:id="@+id/tv_tukarbtn"
-                    android:layout_width="85dp"
-                    android:layout_height="39dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="22dp"
                     android:backgroundTint="@color/royalblue"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="@string/tv_tukarbtn"
@@ -95,7 +118,6 @@
                     android:layout_marginEnd="22dp"
                     android:textColor="@color/white"
                     android:textSize="11sp"/>
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -106,7 +128,7 @@
                         android:text="@string/tv_misiharian"
                         style="@style/normaltext"
                         android:layout_marginStart="18dp"
-                        android:layout_marginTop="17sp"
+                        android:layout_marginTop="14sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
