@@ -34,7 +34,7 @@
     <EditText
         android:id="@+id/tv_inputsandi"
         android:hint="@string/tv_inputsandi"
-        android:inputType="textVisiblePassword"
+        android:inputType="textPassword"
         android:paddingStart="24dp"
         android:paddingEnd="24dp"
         android:layout_marginTop="20dp"

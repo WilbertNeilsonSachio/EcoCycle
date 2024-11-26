@@ -3,6 +3,7 @@
     <string name="tv_heading">EcoCycle</string>
     <string name="tv_subheading">Masuk atau Daftar</string>
     <string name="tv_inputemail">Email</string>
+    <string name="tv_inputemailatauusername">Email atau Username</string>
     <string name="tv_tombolselanjutnya">Selanjutnya</string>
     <string name="tv_opsiAtau">Atau</string>
     <string name="tv_googleSignIn">Lanjutkan dengan Google</string>
