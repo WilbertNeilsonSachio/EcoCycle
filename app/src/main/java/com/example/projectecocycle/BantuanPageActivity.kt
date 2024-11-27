@@ -8,15 +8,13 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class HomePage : AppCompatActivity() {
-
+class BantuanPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home_page)
-
-        // Bind BottomNavigationView
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_bantuan_page)
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigation_bottom)
-        bottomNavigationView.selectedItemId = R.id.nav_beranda
+        bottomNavigationView.selectedItemId = R.id.nav_bantuan
         // Handle menu item clicks
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {

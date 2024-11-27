@@ -32,8 +32,11 @@
     <string name="tv_hargagelaskacatext">Rp.3.500</string>
     <string name="tv_satuankg">/kg</string>
     <string name="tv_jumlahkoin">0000</string>
+    <string name="tv_username">Username</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_logout">Keluar</string>
+    <string name="tv_logoutsmall">Keluar dari akun dengan aman</string>
     <string name="default_web_client_id">77242582736-gq0mhmojk35vl13b47opv13lul81pu9g.apps.googleusercontent.com</string>
-
 
 
 </resources>
