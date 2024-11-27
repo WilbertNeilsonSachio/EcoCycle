@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:src="@drawable/icon_notif"
         />
 
@@ -41,7 +41,7 @@
         android:id="@+id/whitebg_mission"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="55dp"
         android:layout_marginLeft="22dp"
         android:layout_marginRight="22dp"
         app:cardCornerRadius="20dp"
@@ -99,7 +99,7 @@
                             android:text="@string/tv_jumlahkoin"
                             android:textColor="@color/white"
                             android:layout_gravity="center"
-                            android:textSize="12dp"
+                            android:textSize="12sp"
                             android:fontFamily="@font/montserrat_semibold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
@@ -108,9 +108,9 @@
 
                 <Button
                     android:id="@+id/tv_tukarbtn"
-                    android:layout_width="90dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="22dp"
+                    android:layout_width="92dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
                     android:backgroundTint="@color/royalblue"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="@string/tv_tukarbtn"
@@ -162,11 +162,24 @@
     <TextView
         android:id="@+id/kategorisampahtext"
         android:text="@string/tv_kategorisampahtext"
-        style="@style/normaltext"
+        style="@style/fontdaftarsampah"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/whitebg_mission"
-        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toTopOf="@id/plastikbtn"
         android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/lihatsemua"
+        android:text="@string/tv_lihatsemuatext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kacatext"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="11sp"
+        android:textColor="@color/royalblue"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -242,10 +255,9 @@
     <TextView
         android:id="@+id/hargasampahtext"
         android:text="@string/tv_hargasampahtext"
-        style="@style/normaltext"
+        style="@style/fontdaftarsampah"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/plastiktext"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -401,11 +413,11 @@
                 android:src="@drawable/gelaskaca" />
 
             <TextView
-                android:id="@+id/gelaskacatext"
+                android:id="@+id/topleskacatext"
                 style="@style/fontproduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tv_gelaskacatext" />
+                android:text="@string/tv_topleskacatext" />
 
             <TextView
                 android:id="@+id/hargagelaskaca"
@@ -451,8 +463,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/navigation_bottom_menu"  />
-
-
 
 
 
