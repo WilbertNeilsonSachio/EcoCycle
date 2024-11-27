@@ -1,7 +1,9 @@
 package com.example.projectecocycle
 
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -10,6 +12,11 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.target.Target
+import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -48,12 +55,15 @@ class AkunPageActivity : AppCompatActivity() {
             finish()
         }
 
+
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigation_bottom)
         bottomNavigationView.selectedItemId = R.id.nav_akun
         // Handle menu item clicks
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_beranda -> {
+                    val intent = Intent(this, HomePage::class.java)
+                    startActivity(intent)
                     true
                 }
 
@@ -80,7 +90,6 @@ class AkunPageActivity : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
-
                 else -> false
             }
         }
@@ -89,20 +98,36 @@ class AkunPageActivity : AppCompatActivity() {
         // Set email
         emailTextView.text = user.email
 
+        // Log the photo URL for debugging
+        Log.d("AkunActivity", "Photo URL from FirebaseUser: ${user.photoUrl}")
+
         // Check if the user logged in with Google
         if (user.photoUrl != null) {
-            // Use Google profile picture
-            Glide.with(this).load(user.photoUrl).into(profilePicture)
+            // Use FirebaseUser's profile picture
+            Glide.with(this)
+                .load(user.photoUrl)
+                .placeholder(R.drawable.icon_profile) // Default placeholder image
+                .error(R.drawable.icon_profile) // Default image on error
+                .circleCrop()
+                .into(profilePicture)
         } else {
-            // Use default profile picture
-            profilePicture.setImageResource(R.drawable.icon_profile) // Replace with your default profile icon
+            // Attempt to fetch the Google profile picture URL via GoogleSignInAccount
+            val account = GoogleSignIn.getLastSignedInAccount(this)
+            if (account?.photoUrl != null) {
+                Log.d("AkunActivity", "Photo URL from GoogleSignInAccount: ${account.photoUrl}")
+                Glide.with(this)
+                    .load(account.photoUrl)
+                    .placeholder(R.drawable.icon_profile) // Default placeholder image
+                    .error(R.drawable.icon_profile) // Default image on error
+                    .circleCrop()
+                    .into(profilePicture)
+            } else {
+                // Use default profile picture if no URL is available
+                profilePicture.setImageResource(R.drawable.icon_profile) // Default profile icon
+                Log.d("AkunActivity", "No profile picture available; using default.")
+            }
         }
-
         // Set username
-        usernameTextView.text = if (user.displayName != null) {
-            user.displayName // Google account username
-        } else {
-            "Your Username" // Replace with your logic to fetch the username for email/password users
-        }
+        usernameTextView.text = user.displayName ?: "Your Username" // Use FirebaseUser's displayName or fallback
     }
 }

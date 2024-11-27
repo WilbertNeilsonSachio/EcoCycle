@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.gms.google-services")
-//    id("com.google.devtools.ksp")
 }
 
 android {
@@ -47,6 +46,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.material.v190)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
@@ -59,7 +59,6 @@ dependencies {
     implementation (libs.gms.play.services.auth)
 
     implementation(libs.glide)
-//    ksp(libs.ksp)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

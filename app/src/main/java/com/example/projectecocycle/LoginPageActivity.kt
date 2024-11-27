@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -42,7 +43,7 @@ class LoginPageActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         // Bind views
-        tvInputEmailAtauUsername = findViewById(R.id.tv_inputemailatauusername)
+        tvInputEmailAtauUsername = findViewById(R.id.textInputLayout)
         tvTombolSelanjutnya = findViewById(R.id.tv_tombolselanjutnya)
         tvDaftarOption = findViewById(R.id.tv_daftaroption)
 
@@ -112,11 +113,24 @@ class LoginPageActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d("GoogleSignIn", "signInWithCredential:success")
                     val user = auth.currentUser
-                    Toast.makeText(this, "Welcome, ${user?.displayName}!", Toast.LENGTH_SHORT).show()
-                    // Redirect to HomePage
-                    val intent = Intent(this, HomePage::class.java)
-                    startActivity(intent)
-                    finish()
+                    if (user != null) {
+                        // Fetch profile picture from GoogleSignInAccount
+                        val account = GoogleSignIn.getLastSignedInAccount(this)
+                        val profilePictureUrl = account?.photoUrl?.toString()
+
+                        // Log the retrieved photo URL for debugging
+                        Log.d("GoogleSignIn", "Google Profile Picture URL: $profilePictureUrl")
+
+                        // Redirect to HomePage (or next activity)
+                        val intent = Intent(this, HomePage::class.java).apply {
+                            putExtra("profilePictureUrl", profilePictureUrl) // Pass photo URL
+                        }
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        Log.e("GoogleSignIn", "FirebaseUser is null after sign-in")
+                        Toast.makeText(this, "User data could not be retrieved!", Toast.LENGTH_SHORT).show()
+                    }
                 } else {
                     Log.w("GoogleSignIn", "signInWithCredential:failure", task.exception)
                     Toast.makeText(this, "Authentication failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
