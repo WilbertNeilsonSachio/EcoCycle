@@ -281,7 +281,6 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/gambarbotolairmienral"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -289,18 +288,16 @@
                     android:src="@drawable/botolairmineral" />
 
                 <TextView
-                    android:id="@+id/botolairmineraltext"
                     style="@style/fontproduk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tv_botolairmineraltext" />
 
                 <TextView
-                    android:id="@+id/hargabotolairmineral"
                     style="@style/hargaproduk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_hargabotolairmineraltext" />
+                    android:text="@string/tv_hargarp2200" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -308,7 +305,6 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/tagbotolplastik"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/icon_tag"
@@ -316,7 +312,6 @@
                         android:layout_marginTop="5dp"/>
 
                     <TextView
-                        android:id="@+id/tagplastik1"
                         android:text="@string/tv_plastiktext"
                         style="@style/tagtext"
                         android:layout_width="wrap_content"
@@ -343,7 +338,6 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/gambarkertasHVS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -351,18 +345,16 @@
                 android:src="@drawable/kertashvs" />
 
             <TextView
-                android:id="@+id/kertasHVSext"
                 style="@style/fontproduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tv_kertashvstext" />
 
             <TextView
-                android:id="@+id/hargakertashvs"
                 style="@style/hargaproduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tv_hargakertashvstext" />
+                android:text="@string/tv_hargarp1500" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -370,7 +362,6 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/tagkertashvs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
@@ -378,7 +369,6 @@
                     android:src="@drawable/icon_tag" />
 
                 <TextView
-                    android:id="@+id/tagkertas1"
                     style="@style/tagtext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -405,26 +395,23 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/gambargelaskaca"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/gelaskaca" />
+                android:src="@drawable/topleskaca" />
 
             <TextView
-                android:id="@+id/topleskacatext"
                 style="@style/fontproduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tv_topleskacatext" />
 
             <TextView
-                android:id="@+id/hargagelaskaca"
                 style="@style/hargaproduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tv_hargagelaskacatext" />
+                android:text="@string/tv_hargarp3500" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -432,7 +419,6 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/taggelaskaca"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
@@ -440,7 +426,6 @@
                     android:src="@drawable/icon_tag" />
 
                 <TextView
-                    android:id="@+id/tagkaca1"
                     style="@style/tagtext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

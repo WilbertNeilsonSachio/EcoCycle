@@ -55,6 +55,9 @@
     <string name="tv_jumlahkoin">0000</string>
     <string name="tv_lihatsemuatext">Lihat Semua</string>
     <string name="tv_daftarsampahplasiktext">Daftar Sampah Plastik</string>
+    <string name="tv_daftarsampahkertaskardustext">Daftar Sampah Kertas/Kardus</string>
+    <string name="tv_daftarsampahkacatext">Daftar Sampah Kaca</string>
+    <string name="tv_daftarsampahtext">Daftar Sampah</string>
 
 
 </resources>
