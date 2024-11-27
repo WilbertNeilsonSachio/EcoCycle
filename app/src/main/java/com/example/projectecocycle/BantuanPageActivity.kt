@@ -11,7 +11,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class BantuanPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_bantuan_page)
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigation_bottom)
         bottomNavigationView.selectedItemId = R.id.nav_bantuan

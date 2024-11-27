@@ -11,7 +11,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class JualPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_jual_page)
     }
 }
