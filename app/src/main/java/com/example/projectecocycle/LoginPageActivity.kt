@@ -10,7 +10,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -43,7 +42,7 @@ class LoginPageActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         // Bind views
-        tvInputEmailAtauUsername = findViewById(R.id.textInputLayout)
+        tvInputEmailAtauUsername = findViewById(R.id.tv_inputemailatauusername)
         tvTombolSelanjutnya = findViewById(R.id.tv_tombolselanjutnya)
         tvDaftarOption = findViewById(R.id.tv_daftaroption)
 
