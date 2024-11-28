@@ -34,7 +34,6 @@
         android:layout_marginTop="10dp"
         style="@style/subheadingtext"
         />
-
     <EditText
         android:id="@+id/tv_inputemailatauusername"
         android:hint="@string/tv_inputemailatauusername"

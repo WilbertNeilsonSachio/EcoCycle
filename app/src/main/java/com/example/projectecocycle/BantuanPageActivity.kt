@@ -18,6 +18,8 @@ class BantuanPageActivity : AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_beranda -> {
+                    val intent = Intent(this, HomePage::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.nav_transaksi -> {
