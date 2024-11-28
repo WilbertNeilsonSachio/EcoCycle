@@ -19,6 +19,9 @@
             android:name=".Notification_page"
             android:exported="false" />
         <activity
+            android:name=".SalePage"
+            android:exported="false" />
+        <activity
             android:name=".JualPageActivity"
             android:exported="false" />
         <activity
