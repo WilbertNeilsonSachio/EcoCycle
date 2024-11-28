@@ -24,7 +24,8 @@
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation_bottom">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -607,20 +608,21 @@
 
         </LinearLayout>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigation_bottom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:labelVisibilityMode="labeled"
-            android:background="@color/white"
-            app:itemIconTint="@color/softgrey"
-            app:itemTextColor="@color/softgrey"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:menu="@menu/navigation_bottom_menu"  />
-
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        android:background="@color/white"
+        app:itemIconTint="@color/softgrey"
+        app:itemTextColor="@color/softgrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navigation_bottom_menu"  />
+
 
 
 

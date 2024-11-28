@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProjectEcoCycle"
         tools:targetApi="31">
         <activity
+            android:name=".DraftGlassPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".DraftPaperPageActivity"
             android:exported="false" />
         <activity

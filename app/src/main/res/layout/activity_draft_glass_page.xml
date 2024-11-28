@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DraftPaperPageActivity"
+    tools:context=".DraftGlassPageActivity"
     android:background="@color/greybg">
 
     <ImageView
@@ -163,8 +163,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/daftarsampahkertas"
-            android:text="@string/tv_daftarsampahkertaskardustext"
+            android:text="@string/tv_daftarsampahkacatext"
             style="@style/fontdaftarsampah"
             android:layout_marginTop="12dp"
             android:layout_width="wrap_content"
@@ -204,122 +203,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
-                                    android:layout_marginTop="33dp"
-                                    android:src="@drawable/kertashvs" />
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/topleskaca" />
 
                                 <TextView
                                     style="@style/fontproduk"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_kertashvstext" />
-
-                                <TextView
-                                    style="@style/hargaproduk"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp1500" />
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="4dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/icon_tag" />
-
-                                    <TextView
-                                        style="@style/tagtext"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="109dp"
-                            android:layout_height="129dp"
-                            android:layout_marginVertical="6dp"
-                            android:layout_marginHorizontal="12dp"
-                            app:cardCornerRadius="5dp"
-                            android:foregroundGravity="fill">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="16dp"
-                                    android:src="@drawable/kardus" />
-
-                                <TextView
-                                    style="@style/fontproduk"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/tv_kardustext" />
-
-                                <TextView
-                                    style="@style/hargaproduk"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp2200" />
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="4dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/icon_tag" />
-
-                                    <TextView
-                                        style="@style/tagtext"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="109dp"
-                            android:layout_height="129dp"
-                            android:layout_marginVertical="6dp"
-                            android:layout_marginEnd="30dp"
-                            app:cardCornerRadius="5dp"
-                            android:foregroundGravity="fill">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="41dp"
-                                    android:src="@drawable/koran" />
-
-                                <TextView
-                                    style="@style/fontproduk"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/tv_korantext" />
+                                    android:text="@string/tv_topleskacatext" />
 
                                 <TextView
                                     style="@style/hargaproduk"
@@ -343,7 +234,115 @@
                                         style="@style/tagtext"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
+                                        android:text="@string/tv_kacatext" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="109dp"
+                            android:layout_height="129dp"
+                            android:layout_marginVertical="6dp"
+                            android:layout_marginHorizontal="12dp"
+                            app:cardCornerRadius="5dp"
+                            android:foregroundGravity="fill">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="6dp"
+                                    android:src="@drawable/botolkaca" />
+
+                                <TextView
+                                    style="@style/fontproduk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_botolkacatext" />
+
+                                <TextView
+                                    style="@style/hargaproduk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_hargarp1500" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:src="@drawable/icon_tag" />
+
+                                    <TextView
+                                        style="@style/tagtext"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_kacatext" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="109dp"
+                            android:layout_height="129dp"
+                            android:layout_marginVertical="6dp"
+                            android:layout_marginEnd="30dp"
+                            app:cardCornerRadius="5dp"
+                            android:foregroundGravity="fill">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="61dp"
+                                    android:layout_height="59dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/gelaskaca" />
+
+                                <TextView
+                                    style="@style/fontproduk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_gelaskacatext" />
+
+                                <TextView
+                                    style="@style/hargaproduk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_hargarp3500" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:src="@drawable/icon_tag" />
+
+                                    <TextView
+                                        style="@style/tagtext"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_kacatext" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -373,14 +372,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
-                                    android:layout_marginTop="32dp"
-                                    android:src="@drawable/gulungantisu" />
+                                    android:layout_marginTop="38dp"
+                                    android:src="@drawable/piringkaca" />
 
                                 <TextView
                                     style="@style/fontproduk"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_gulungantisutext" />
+                                    android:text="@string/tv_piringkacatext" />
 
                                 <TextView
                                     style="@style/hargaproduk"
@@ -404,7 +403,7 @@
                                         style="@style/tagtext"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
+                                        android:text="@string/tv_kacatext" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -425,16 +424,16 @@
 
                                 <ImageView
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="58dp"
                                     android:layout_gravity="center"
-                                    android:layout_marginTop="25dp"
-                                    android:src="@drawable/kertasbon" />
+                                    android:layout_marginTop="21dp"
+                                    android:src="@drawable/cangkirkaca" />
 
                                 <TextView
                                     style="@style/fontproduk"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_kertasbontext" />
+                                    android:text="@string/tv_cangkirkacatext" />
 
                                 <TextView
                                     style="@style/hargaproduk"
@@ -458,7 +457,7 @@
                                         style="@style/tagtext"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
+                                        android:text="@string/tv_kacatext" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -479,16 +478,16 @@
 
                                 <ImageView
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="53dp"
                                     android:layout_gravity="center"
-                                    android:layout_marginTop="36dp"
-                                    android:src="@drawable/kertascacah" />
+                                    android:layout_marginTop="26dp"
+                                    android:src="@drawable/asbakkaca" />
 
                                 <TextView
                                     style="@style/fontproduk"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_kertascacahtext" />
+                                    android:text="@string/tv_asbakkacatext" />
 
                                 <TextView
                                     style="@style/hargaproduk"
@@ -512,7 +511,7 @@
                                         style="@style/tagtext"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
+                                        android:text="@string/tv_kacatext" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -539,17 +538,17 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="57dp"
+                                    android:layout_height="60dp"
                                     android:layout_gravity="center"
-                                    android:layout_marginTop="24dp"
-                                    android:src="@drawable/duplek" />
+                                    android:layout_marginTop="19dp"
+                                    android:src="@drawable/tekokaca" />
 
                                 <TextView
                                     style="@style/fontproduk"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_duplektext" />
+                                    android:text="@string/tv_tekokacatext" />
 
                                 <TextView
                                     style="@style/hargaproduk"
@@ -573,115 +572,7 @@
                                         style="@style/tagtext"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="109dp"
-                            android:layout_height="129dp"
-                            android:layout_marginVertical="6dp"
-                            android:layout_marginHorizontal="12dp"
-                            app:cardCornerRadius="5dp"
-                            android:foregroundGravity="fill">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="28dp"
-                                    android:src="@drawable/sarangtelur" />
-
-                                <TextView
-                                    style="@style/fontproduk"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/tv_sarangtelurtext" />
-
-                                <TextView
-                                    style="@style/hargaproduk"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp1500" />
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="4dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/icon_tag" />
-
-                                    <TextView
-                                        style="@style/tagtext"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="109dp"
-                            android:layout_height="129dp"
-                            android:layout_marginVertical="6dp"
-                            android:layout_marginEnd="30dp"
-                            app:cardCornerRadius="5dp"
-                            android:foregroundGravity="fill">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="27dp"
-                                    android:src="@drawable/buku" />
-
-                                <TextView
-                                    style="@style/fontproduk"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/tv_bukutext" />
-
-                                <TextView
-                                    style="@style/hargaproduk"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp3500" />
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="4dp"
-                                        android:layout_marginTop="5dp"
-                                        android:src="@drawable/icon_tag" />
-
-                                    <TextView
-                                        style="@style/tagtext"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/tv_kertaskardustext" />
+                                        android:text="@string/tv_kacatext" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -708,6 +599,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/navigation_bottom_menu"  />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
