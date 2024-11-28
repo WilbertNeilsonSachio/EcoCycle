@@ -212,12 +212,23 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_kertashvstext" />
-
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp1500" />
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp1500" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -267,11 +278,23 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_kardustext" />
 
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp2200" />
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp2200" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -309,10 +332,10 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="75dp"
+                                    android:layout_height="49dp"
                                     android:layout_gravity="center"
-                                    android:layout_marginTop="41dp"
+                                    android:layout_marginTop="30dp"
                                     android:src="@drawable/koran" />
 
                                 <TextView
@@ -321,11 +344,23 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_korantext" />
 
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp3500" />
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp3500" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -382,11 +417,23 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_gulungantisutext" />
 
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp2200" />
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp2200" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -436,11 +483,23 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_kertasbontext" />
 
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp1500" />
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp1500" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -490,12 +549,23 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_kertascacahtext" />
 
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp3500" />
+                                    android:orientation="horizontal">
 
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp3500" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
                                 <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -551,11 +621,23 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_duplektext" />
 
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp2200" />
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp2200" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -605,11 +687,23 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_sarangtelurtext" />
 
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp1500" />
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp1500" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
@@ -659,11 +753,23 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/tv_bukutext" />
 
-                                <TextView
-                                    style="@style/hargaproduk"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_hargarp3500" />
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/hargaproduk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_hargarp3500" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tv_satuankg"
+                                        style="@style/satuankg"/>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
