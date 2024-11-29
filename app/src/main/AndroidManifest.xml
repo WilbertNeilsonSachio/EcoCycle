@@ -16,6 +16,9 @@
         android:theme="@style/Theme.ProjectEcoCycle"
         tools:targetApi="31">
         <activity
+            android:name=".Coin_page"
+            android:exported="false" />
+        <activity
             android:name=".Notification_page"
             android:exported="false" />
         <activity
