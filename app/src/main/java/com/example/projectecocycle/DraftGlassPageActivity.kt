@@ -2,6 +2,7 @@ package com.example.projectecocycle
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,12 @@ class DraftGlassPageActivity : AppCompatActivity() {
         val notificon = findViewById<ImageView>(R.id.notificon)
         notificon.setOnClickListener {
             val intent = Intent(this, NotificationPageActivity::class.java)
+            startActivity(intent)
+        }
+
+        val tukarbtn = findViewById<Button>(R.id.tv_tukarbtn)
+        tukarbtn.setOnClickListener {
+            val intent = Intent(this, CoinPageActivity::class.java)
             startActivity(intent)
         }
     }

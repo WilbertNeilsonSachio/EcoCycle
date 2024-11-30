@@ -183,7 +183,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="35dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"/>
 
     <ImageButton
         android:id="@+id/plastikbtn"
@@ -195,7 +197,10 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="22dp"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"/>
+        android:layout_height="0dp"
+        android:contentDescription="Sampah Plastik"
+        android:clickable="true"
+        android:focusable="true"/>
 
     <TextView
         android:id="@+id/plastiktext"
@@ -217,7 +222,10 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:contentDescription="Sampah Kertas/Kardus"
+        android:clickable="true"
+        android:focusable="true"/>
 
     <TextView
         android:id="@+id/kertaskardustext"
@@ -241,7 +249,10 @@
         android:layout_marginEnd="22dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:contentDescription="Sampah Kaca"
+        android:clickable="true"
+        android:focusable="true"/>
 
     <TextView
         android:id="@+id/kacatext"

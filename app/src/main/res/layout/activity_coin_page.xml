@@ -415,5 +415,4 @@
             android:backgroundTint="@color/royalblue"/>
     </LinearLayout>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
