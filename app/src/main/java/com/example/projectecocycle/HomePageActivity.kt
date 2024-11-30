@@ -2,13 +2,10 @@ package com.example.projectecocycle
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class HomePage : AppCompatActivity() {
+class HomePageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +18,7 @@ class HomePage : AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_beranda -> {
-                    val intent = Intent(this, HomePage::class.java)
+                    val intent = Intent(this, HomePageActivity::class.java)
                     startActivity(intent)
                     true
                 }

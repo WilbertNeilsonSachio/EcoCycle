@@ -4,14 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
 
 class ConfirmationRegisterPageActivity : AppCompatActivity() {
 
@@ -50,7 +45,7 @@ class ConfirmationRegisterPageActivity : AppCompatActivity() {
                         // Login successful
                         Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
                         // Redirect to another activity, e.g., HomeActivity
-                        val intent = Intent(this, HomePage::class.java)
+                        val intent = Intent(this, HomePageActivity::class.java)
                         startActivity(intent)
                         finish()
                     } else {

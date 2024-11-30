@@ -8,10 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -121,7 +118,7 @@ class LoginPageActivity : AppCompatActivity() {
                         Log.d("GoogleSignIn", "Google Profile Picture URL: $profilePictureUrl")
 
                         // Redirect to HomePage (or next activity)
-                        val intent = Intent(this, HomePage::class.java).apply {
+                        val intent = Intent(this, HomePageActivity::class.java).apply {
                             putExtra("profilePictureUrl", profilePictureUrl) // Pass photo URL
                         }
                         startActivity(intent)
