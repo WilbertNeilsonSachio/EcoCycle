@@ -212,7 +212,7 @@
                     android:id="@+id/whatsapp_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="whatsapp info"
+                    android:text="Whatsapp"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -273,9 +273,7 @@
         </LinearLayout>
 
 
-
         <LinearLayout
-            android:id="@id/tiktok_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -311,7 +309,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="Tonton konten menarik kami"
+                    android:text="Tonton konten menarik kami."
                     android:textColor="@color/softgrey"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -327,7 +325,6 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/tiktok_layout"
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.cardview.widget.CardView
@@ -371,7 +368,6 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
-
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
