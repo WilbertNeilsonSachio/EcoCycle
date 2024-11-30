@@ -12,7 +12,20 @@
           "package_name": "com.example.projectecocycle"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "77242582736-gq0mhmojk35vl13b47opv13lul81pu9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectecocycle",
+            "certificate_hash": "7b12f489b1478315a02f77ed7322cdc031f87724"
+          }
+        },
+        {
+          "client_id": "77242582736-efsaqucp2nhrumbkj6i07m3ch85bg8p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD83Bk_jEt3ZfU5J_QPqVDs_i3WPczurq0"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77242582736-efsaqucp2nhrumbkj6i07m3ch85bg8p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
