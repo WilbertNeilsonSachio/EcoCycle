@@ -25,11 +25,33 @@
     <string name="tv_kacatext">Kaca</string>
     <string name="tv_hargasampahtext">Harga Sampah</string>
     <string name="tv_botolairmineraltext">Botol air mineral</string>
-    <string name="tv_hargabotolairmineraltext">Rp.2.200</string>
+    <string name="tv_tutupbotoltext">Tutup Botol</string>
+    <string name="tv_kantongplastiktext">Kantong Plastik</string>
+    <string name="tv_galontext">Galon</string>
+    <string name="tv_gelasplatiktext">Gelas Plastik</string>
+    <string name="tv_bungkussnacktext">Bungkus Snack</string>
+    <string name="tv_tempatcat">Tempat Cat</string>
     <string name="tv_kertashvstext">Kertas HVS</string>
-    <string name="tv_hargakertashvstext">Rp.1.500</string>
+    <string name="tv_kardustext">Kardus</string>
+    <string name="tv_korantext">Koran</string>
+    <string name="tv_gulungantisutext">Gulungan Tisu</string>
+    <string name="tv_kertasbontext">Kertas BON</string>
+    <string name="tv_kertascacahtext">Kertas Cacah</string>
+    <string name="tv_duplektext">Duplek</string>
+    <string name="tv_sarangtelurtext">Sarang Telur</string>
+    <string name="tv_bukutext">Buku</string>
+    <string name="tv_topleskacatext">Toples Kaca</string>
+    <string name="tv_botolkacatext">Botol Kaca</string>
     <string name="tv_gelaskacatext">Gelas Kaca</string>
-    <string name="tv_hargagelaskacatext">Rp.3.500</string>
+    <string name="tv_piringkacatext">Piring Kaca</string>
+    <string name="tv_cangkirkacatext">Cangkir Kaca</string>
+    <string name="tv_asbakkacatext">Asbak Kaca</string>
+    <string name="tv_tekokacatext">Teko Kaca</string>
+    <string name="tv_hargarp3500">Rp.3.500</string>
+    <string name="tv_hargarp1500">Rp.1.500</string>
+    <string name="tv_hargarp2200">Rp.2.200</string>
+    <string name="tv_hargarp3000">Rp.3.000</string>
+    <string name="tv_hargarp5000">Rp.5.000</string>
     <string name="tv_satuankg">/kg</string>
     <string name="tv_jumlahkoin">0000</string>
     <string name="tv_username">Username</string>
@@ -45,6 +67,11 @@
     <string name="tiktok">Tiktok</string>
     <string name="EcoCycle_deskripsi">EcoCycle adalah aplikasi inovatif yang memungkinkan pengguna untuk membeli dan menjual sampah secara mudah dan praktis, dengan tujuan mendukung keberlanjutan dan menjaga kebersihan lingkungan. Melalui EcoCycle, Anda dapat dengan cepat mendaur ulang sampah rumah tangga atau bisnis Anda dengan cara yang lebih efisien dan menguntungkan.</string>
     <string name="notification_page">Notification page</string>
+    <string name="tv_lihatsemuatext">Lihat Semua</string>
+    <string name="tv_daftarsampahplasiktext">Daftar Sampah Plastik</string>
+    <string name="tv_daftarsampahkertaskardustext">Daftar Sampah Kertas/Kardus</string>
+    <string name="tv_daftarsampahkacatext">Daftar Sampah Kaca</string>
+    <string name="tv_daftarsampahtext">Daftar Sampah</string>
 
 
 </resources>

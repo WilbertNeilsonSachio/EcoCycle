@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:src="@drawable/icon_notif"
         />
 
@@ -41,7 +41,7 @@
         android:id="@+id/whitebg_mission"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="55dp"
         android:layout_marginLeft="22dp"
         android:layout_marginRight="22dp"
         app:cardCornerRadius="20dp"
@@ -99,7 +99,7 @@
                             android:text="@string/tv_jumlahkoin"
                             android:textColor="@color/white"
                             android:layout_gravity="center"
-                            android:textSize="12dp"
+                            android:textSize="12sp"
                             android:fontFamily="@font/montserrat_semibold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
@@ -108,9 +108,9 @@
 
                 <Button
                     android:id="@+id/tv_tukarbtn"
-                    android:layout_width="90dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="22dp"
+                    android:layout_width="92dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
                     android:backgroundTint="@color/royalblue"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="@string/tv_tukarbtn"
@@ -162,11 +162,24 @@
     <TextView
         android:id="@+id/kategorisampahtext"
         android:text="@string/tv_kategorisampahtext"
-        style="@style/normaltext"
+        style="@style/fontdaftarsampah"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/whitebg_mission"
-        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toTopOf="@id/plastikbtn"
         android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/lihatsemua"
+        android:text="@string/tv_lihatsemuatext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kacatext"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="11sp"
+        android:textColor="@color/royalblue"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -242,10 +255,9 @@
     <TextView
         android:id="@+id/hargasampahtext"
         android:text="@string/tv_hargasampahtext"
-        style="@style/normaltext"
+        style="@style/fontdaftarsampah"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/plastiktext"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -269,7 +281,6 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/gambarbotolairmienral"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -277,18 +288,28 @@
                     android:src="@drawable/botolairmineral" />
 
                 <TextView
-                    android:id="@+id/botolairmineraltext"
                     style="@style/fontproduk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tv_botolairmineraltext" />
 
-                <TextView
-                    android:id="@+id/hargabotolairmineral"
-                    style="@style/hargaproduk"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_hargabotolairmineraltext" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/hargaproduk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_hargarp2200" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_satuankg"
+                        style="@style/satuankg"/>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -296,7 +317,6 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/tagbotolplastik"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/icon_tag"
@@ -304,7 +324,6 @@
                         android:layout_marginTop="5dp"/>
 
                     <TextView
-                        android:id="@+id/tagplastik1"
                         android:text="@string/tv_plastiktext"
                         style="@style/tagtext"
                         android:layout_width="wrap_content"
@@ -331,7 +350,6 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/gambarkertasHVS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -339,18 +357,28 @@
                 android:src="@drawable/kertashvs" />
 
             <TextView
-                android:id="@+id/kertasHVSext"
                 style="@style/fontproduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tv_kertashvstext" />
 
-            <TextView
-                android:id="@+id/hargakertashvs"
-                style="@style/hargaproduk"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tv_hargakertashvstext" />
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/hargaproduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_hargarp1500" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_satuankg"
+                    style="@style/satuankg"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -358,7 +386,6 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/tagkertashvs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
@@ -366,7 +393,6 @@
                     android:src="@drawable/icon_tag" />
 
                 <TextView
-                    android:id="@+id/tagkertas1"
                     style="@style/tagtext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -393,26 +419,35 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/gambargelaskaca"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/gelaskaca" />
+                android:src="@drawable/topleskaca" />
 
             <TextView
-                android:id="@+id/gelaskacatext"
                 style="@style/fontproduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tv_gelaskacatext" />
+                android:text="@string/tv_topleskacatext" />
 
-            <TextView
-                android:id="@+id/hargagelaskaca"
-                style="@style/hargaproduk"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tv_hargagelaskacatext" />
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/hargaproduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_hargarp3500" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_satuankg"
+                    style="@style/satuankg"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -420,7 +455,6 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/taggelaskaca"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
@@ -428,7 +462,6 @@
                     android:src="@drawable/icon_tag" />
 
                 <TextView
-                    android:id="@+id/tagkaca1"
                     style="@style/tagtext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -451,5 +484,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/navigation_bottom_menu"  />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,6 +31,18 @@
             android:name=".TransaksiPageActivity"
             android:exported="false" />
         <activity
+            android:name=".DraftAllTrashPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DraftGlassPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DraftPaperPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DraftPlasticPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomePage"
             android:exported="false" />
         <activity
