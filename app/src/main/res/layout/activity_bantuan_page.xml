@@ -35,6 +35,9 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="10dp"
         android:src="@drawable/icon_notif"
+        android:contentDescription="Notification Icon"
+        android:clickable="true"
+        android:focusable="true"
         />
 
     <androidx.cardview.widget.CardView

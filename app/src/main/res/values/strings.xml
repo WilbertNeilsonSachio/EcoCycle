@@ -59,10 +59,6 @@
     <string name="tv_logout">Keluar</string>
     <string name="tv_logoutsmall">Keluar dari akun dengan aman</string>
     <string name="default_web_client_id">77242582736-gq0mhmojk35vl13b47opv13lul81pu9g.apps.googleusercontent.com</string>
-    <string name="tidak_ada_transaksi_ditemukan">Tidak ada transaksi ditemukan</string>
-    <string name="text_penjelasan_transaksi">Saat ini anda belum melakukan transaksi. Mulai bertransaksi sekarang.</string>
-    <string name="tidak_ada_transaksi_ditemukan">Tidak ada transaksi ditemukan</string>
-    <string name="text_penjelasan_transaksi">Saat ini anda belum melakukan transaksi. Mulai bertransaksi sekarang.</string>
     <string name="halo_apa_pertanyaanmu">Halo, apa pertanyaanmu?</string>
     <string name="whatsapp_admin">whatsapp admin</string>
     <string name="instagram">Instagram</string>

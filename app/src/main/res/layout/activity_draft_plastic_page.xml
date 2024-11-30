@@ -50,7 +50,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:src="@drawable/icon_notif"/>
+                    android:src="@drawable/icon_notif"
+                    android:contentDescription="Notification Icon"
+                    android:clickable="true"
+                    android:focusable="true"/>
             </LinearLayout>
         </LinearLayout>
 
