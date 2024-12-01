@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalePageActivity"
+    android:background="@color/greybg">
+
+    <ImageView
+        android:id="@+id/lataratas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/tv_contentdesclataratas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/upasset"/>
+
+    <ImageView
+        android:id="@+id/whiteecocycle"
+        android:contentDescription="@string/tv_contentdescwhiteecocycle"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logoputih"/>
+
+    <ImageView
+        android:contentDescription="@string/tv_contentdescnotificon"
+        android:id="@+id/notificon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"
+        android:src="@drawable/icon_notif" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardalamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginHorizontal="19dp"
+        app:layout_constraintTop_toBottomOf="@id/whiteecocycle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:src="@drawable/lokasi"
+            android:contentDescription="@string/tv_contentdesciconlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="27dp"/>
+
+            <TextView
+                android:id="@+id/alamatjemputtext"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="11dp"
+                android:layout_toStartOf="@+id/addbuttonaddress"
+                android:layout_toEndOf="@+id/location_icon"
+                android:text="@string/tv_alamatpenjemputantext" />
+
+            <Button
+                android:id="@+id/addbuttonaddress"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="27dp"
+                android:backgroundTint="@color/royalblue"
+                android:text="@string/tv_addbtn"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pilihalamattujuan"
+                style="@style/satuankg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/alamatjemputtext"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="71dp"
+                android:layout_toStartOf="@+id/addbuttonaddress"
+                android:layout_toEndOf="@+id/location_icon"
+                android:text="@string/tv_pilihalamattujuan" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/salepagecards"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toBottomOf="@id/lataratas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/detailsampah_card">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/keranjangtext"
+                android:text="@string/tv_keranjangtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                style="@style/normaltext"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tambah_sampah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp"
+                app:layout_constraintTop_toBottomOf="@id/latest_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/item_image"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/tutupbotol"
+                        android:layout_gravity="center_vertical" />
+
+                    <LinearLayout
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/fontproduk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_tutupbotoltext" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/hargaproduk"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tv_hargarp3000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tv_satuankg"
+                                style="@style/satuankg"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_tag"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="5dp"/>
+
+                            <TextView
+                                android:text="@string/tv_plastiktext"
+                                style="@style/tagtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="61dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/btn_minus"
+                            android:text="-"
+                            android:textColor="@color/royalblue" />
+
+                        <TextView
+                            android:id="@+id/item_quantity"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/button_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/btn_plus"
+                            android:text="+"
+                            android:textColor="@color/royalblue" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="13dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tambahsampahlainnyatext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="@string/tv_tambahsampahlainnyatext"
+                        android:textColor="@color/semiblack"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/tambahsampahbtn"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_width="91dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/royalblue"
+                        android:text="@string/tv_tambahsampahbtn"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tanggalpenjemputantext"
+                android:text="@string/tv_tanggalpenjemputantext"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tanggalpenjemputan_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="7dp"
+                app:cardCornerRadius="12dp" >
+
+                <EditText
+                    android:id="@+id/isitanggal"
+                    style="@style/normaltext"
+                    android:layout_width="336dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="14dp"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/icon_kalender"
+                    android:hint="Tanggal-Bulan-Tahun"
+                    android:inputType="date" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/catatantext"
+                android:text="@string/tv_catatantext"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/isicatatan_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="7dp"
+                app:cardCornerRadius="12dp" >
+
+                <EditText
+                    android:id="@+id/isicatatan"
+                    style="@style/normaltext"
+                    android:layout_width="336dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="14dp"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/icon_catatan"
+                    android:hint="Catatan.."
+                    android:inputType="textLongMessage" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/nomortelepontext"
+                android:text="@string/tv_nomortelepontext"
+                style="@style/normaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/isinomortelepon_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="12dp" >
+
+                <EditText
+                    android:id="@+id/isinomortelepon"
+                    style="@style/normaltext"
+                    android:layout_width="336dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="14dp"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/icon_hp"
+                    android:hint="Nomor Telepon"
+                    android:inputType="phone"
+                    android:maxLength="13"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailsampah_card"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@id/salepagecards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailhargasampahtext"
+                android:text="@string/tv_detailhargasampahtext"
+                style="@style/normaltext"
+                android:layout_alignParentTop="true"
+                android:paddingStart="25dp"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/jumlahtotaltext"
+                android:text="@string/tv_jumlahtotaltext"
+                style="@style/fontdetailcard"
+                android:layout_below="@id/detailhargasampahtext"
+                android:layout_marginStart="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/totalhargatext"
+                android:text="@string/tv_hargarp3000"
+                android:layout_below="@id/detailhargasampahtext"
+                android:layout_alignParentEnd="true"
+                style="@style/fontdetailcard"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/kirimbtn"
+                android:text="@string/tv_kirimbtn"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="18dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/royalblue"
+                android:layout_below="@id/jumlahtotaltext"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

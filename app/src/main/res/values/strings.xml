@@ -57,8 +57,20 @@
     <string name="tv_username">Username</string>
     <string name="tv_email">Email</string>
     <string name="tv_logout">Keluar</string>
+    <string name="tv_addbtn">+</string>
+    <string name="tv_kirimbtn">Kirim</string>
     <string name="tv_logoutsmall">Keluar dari akun dengan aman</string>
     <string name="default_web_client_id">77242582736-gq0mhmojk35vl13b47opv13lul81pu9g.apps.googleusercontent.com</string>
+    <string name="tv_halo_apa_pertanyaanmu">Halo, apa pertanyaanmu?</string>
+    <string name="tv_ajukanpertanyaantext">Pertanyaan yang Sering Diajukan (FAQ)</string>
+    <string name="tv_apaituecocycle">Apa itu EcoCycle?</string>
+    <string name="tv_whatsapp_admin">whatsapp admin</string>
+    <string name="tv_instagram">Instagram</string>
+    <string name="tv_tiktok">Tiktok</string>
+    <string name="tv_EcoCycle_deskripsi">EcoCycle adalah aplikasi inovatif yang memungkinkan pengguna untuk membeli dan menjual sampah secara mudah dan praktis, dengan tujuan mendukung keberlanjutan dan menjaga kebersihan lingkungan. Melalui EcoCycle, Anda dapat dengan cepat mendaur ulang sampah rumah tangga atau bisnis Anda dengan cara yang lebih efisien dan menguntungkan.</string>
+    <string name="tv_tidak_ada_transaksi_ditemukan">Tidak ada transaksi ditemukan</string>
+    <string name="tv_text_penjelasan_transaksi">Saat ini anda belum melakukan transaksi. Mulai bertransaksi sekarang.</string>
+    <string name="tv_notification_page">Notification page</string>
     <string name="halo_apa_pertanyaanmu">Halo, apa pertanyaanmu?</string>
     <string name="whatsapp_admin">whatsapp admin</string>
     <string name="instagram">Instagram</string>
@@ -68,10 +80,33 @@
     <string name="text_penjelasan_transaksi">Saat ini anda belum melakukan transaksi. Mulai bertransaksi sekarang.</string>
     <string name="notification_page">Notification page</string>
     <string name="tv_lihatsemuatext">Lihat Semua</string>
+    <string name="tv_catatantext">Catatan</string>
+    <string name="tv_detailhargasampahtext">Detail Harga Sampah</string>
+    <string name="tv_jumlahtotaltext">Jumlah Total</string>
+    <string name="tv_nomortelepontext">Nomor Telepon</string>
+    <string name="tv_tambahsampahbtn">Tambah</string>
+    <string name="tv_tanggalpenjemputantext">Tanggal Penjemputan</string>
+    <string name="tv_tambahsampahlainnyatext">Tambah Sampah Lainnya</string>
     <string name="tv_daftarsampahplasiktext">Daftar Sampah Plastik</string>
     <string name="tv_daftarsampahkertaskardustext">Daftar Sampah Kertas/Kardus</string>
     <string name="tv_daftarsampahkacatext">Daftar Sampah Kaca</string>
     <string name="tv_daftarsampahtext">Daftar Sampah</string>
+    <string name="tv_alamatpenjemputantext">Alamat Penjemputan</string>
+    <string name="tv_pilihalamattujuan">Pilih Alamat Jemputan</string>
+    <string name="tv_keranjangtext">Keranjang</string>
+    <string name="tv_contentdesciconlocation">Ikon lokasi untuk alamat penjemputan</string>
+    <string name="tv_contentdescnotificon">Ikon notifikasi</string>
+    <string name="tv_contentdescwhiteecocycle">Logo putih untuk ecocycle</string>
+    <string name="tv_contentdesclataratas">Background bagian atas untuk halaman</string>
+    <string name="tv_contentdescprofile">Setting Profile user</string>
+    <string name="cd_plastikbtn">Tombol plastik</string>
+    <string name="cd_kertaskardusbtn">Tombol kertas dan kardus</string>
+    <string name="cd_kacabtn">Tombol kaca</string>
+    <string name="tv_notificationtext">Notification</string>
+    <string name="tv_promoinfotext">Promo/info</string>
+    <string name="tv_terbarutext">Terbaru</string>
+    <string name="tv_tentukanlokasitext">Tentukan Lokasi Anda</string>
+
 
 
 </resources>

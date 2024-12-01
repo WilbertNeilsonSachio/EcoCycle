@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectEcoCycle"
         tools:targetApi="31" >
-
+        <activity
+            android:name=".SalePageActivity"
+            android:exported="false" />
         <activity
             android:name=".CoinPageActivity"
             android:exported="false" />
@@ -24,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".LocationPageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".JualPageActivity"
             android:exported="false" />
         <activity
             android:name=".AkunPageActivity"

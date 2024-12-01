@@ -37,15 +37,18 @@
         android:src="@drawable/icon_notif"
         />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/profile_picture"
         android:layout_width="63dp"
         android:layout_height="63dp"
         android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintStart_toStartOf="@id/whiteecocycle"
         app:layout_constraintTop_toBottomOf="@id/whiteecocycle"
         app:layout_constraintBottom_toBottomOf="@id/lataratas"
         android:src="@drawable/icon_profile"
+        android:contentDescription="@string/tv_contentdescprofile"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -79,23 +82,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/lataratas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center_vertical"
         android:padding="16dp"
         android:clickable="true"
         android:focusable="true"
         android:background="?attr/selectableItemBackground">
 
-        <!-- Logout Icon -->
-        <ImageView
+        <ImageButton
             android:id="@+id/icon_logout"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_margin="18dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:src="@drawable/icon_logout"
             android:contentDescription="Logout Icon" />
 
-        <!-- Logout Text -->
         <TextView
             android:id="@+id/tv_logout"
             android:layout_width="wrap_content"

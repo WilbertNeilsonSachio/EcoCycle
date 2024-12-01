@@ -40,7 +40,7 @@ class BantuanPageActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_jual -> {
-                    val intent = Intent(this, JualPageActivity::class.java)
+                    val intent = Intent(this, SalePageActivity::class.java)
                     startActivity(intent)
                     true
                 }
