@@ -106,7 +106,7 @@
                 android:layout_weight="1"
                 android:inputType="text"
                 android:background="@null"
-                android:hint="Nama Tempat"
+                android:hint="Detail Lokasi "
                 style="@style/normaltext"
                 android:minHeight="48dp" />
 
@@ -237,6 +237,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <Button
+            android:id="@+id/kirimbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tv_kirimbtn"
