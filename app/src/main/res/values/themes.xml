@@ -26,21 +26,33 @@
 
     <style name="normaltext">
         <item name="fontFamily">@font/montserrat_semibold</item>
-        <item name="color">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="fontdetailcard">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/softgrey</item>
         <item name="android:textSize">16sp</item>
     </style>
 
     <style name="fontdaftarsampah">
         <item name="fontFamily">@font/montserrat_bold</item>
-        <item name="color">@color/black</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">16sp</item>
         <item name="android:layout_marginStart">40dp</item>
     </style>
 
     <style name="smalltext">
         <item name="fontFamily">@font/montserrat_semibold</item>
-        <item name="color">@color/softgrey</item>
+        <item name="android:textColor">@color/softgrey</item>
         <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="cardedittext">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/softgrey</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="fontproduk">
@@ -64,7 +76,6 @@
         <item name="android:textSize">10sp</item>
     </style>
 
-
     <style name="tagtext">
         <item name="fontFamily">@font/montserrat_semibold</item>
         <item name="android:textSize">5sp</item>
@@ -75,7 +86,7 @@
 
     <style name="navbar_bottom">
         <item name="fontFamily">@font/montserrat_semibold</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/softgrey</item>
     </style>
 
