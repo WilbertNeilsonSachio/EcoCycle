@@ -13,7 +13,6 @@ import androidx.core.view.WindowInsetsCompat
 class LoadingPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_loading_page)
         val logoEcoCycleLight = findViewById<ImageView>(R.id.logoEcoCycleLight)
         val fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in)

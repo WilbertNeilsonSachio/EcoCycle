@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp"
+    android:background="@drawable/background"
     tools:context=".LoginPageActivity">
 
     <ImageView
@@ -26,17 +27,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/logoEcoCycle"
-        app:layout_constraintBottom_toTopOf="@id/tv_inputemail"
+        app:layout_constraintBottom_toTopOf="@id/tv_inputemailatauusername"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         style="@style/subheadingtext"
         />
-
     <EditText
-        android:id="@+id/tv_inputemail"
-        android:text="@string/tv_inputemail"
+        android:id="@+id/tv_inputemailatauusername"
+        android:hint="@string/tv_inputemailatauusername"
         android:inputType="textEmailAddress"
         android:paddingStart="24dp"
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:padding="8dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/royalblue"
-        app:layout_constraintTop_toBottomOf="@id/tv_inputemail"
+        app:layout_constraintTop_toBottomOf="@id/tv_inputemailatauusername"
         app:layout_constraintBottom_toTopOf="@id/tv_opsiAtau"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -81,13 +81,12 @@
         android:textSize="20sp"
         android:padding="6dp"/>
 
-    <EditText
+    <TextView
         android:id="@+id/tv_googleSignIn"
         android:text="@string/tv_googleSignIn"
-        android:inputType="textEmailAddress"
         android:drawableStart="@drawable/devicon_google"
-        android:paddingStart="20dp"
         android:drawablePadding="10dp"
+        android:paddingStart="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tv_opsiAtau"
@@ -95,10 +94,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/semiblack"
-        style="@style/borderEditText"
+        android:background="@drawable/button_background"
+        android:padding="8dp"
         android:fontFamily="@font/montserrat"
         android:textSize="20sp"
-        />
+        android:clickable="true"
+        android:focusable="true"/>
 
     <Button
         android:id="@+id/tv_daftaroption"
