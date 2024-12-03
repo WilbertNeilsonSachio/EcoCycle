@@ -18,7 +18,8 @@
 
         <activity
             android:name=".SalePageActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".CoinPageActivity"
             android:exported="false" />

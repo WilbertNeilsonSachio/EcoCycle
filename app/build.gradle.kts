@@ -60,6 +60,9 @@ dependencies {
 
     implementation(libs.glide)
     implementation(libs.play.services.maps)
+    implementation(libs.firebase.crashlytics.buildtools)
+
+    implementation(libs.gson)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

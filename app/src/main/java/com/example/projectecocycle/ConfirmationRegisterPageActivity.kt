@@ -44,7 +44,7 @@ class ConfirmationRegisterPageActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         // Login successful
                         Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
-                        // Redirect to another activity, e.g., HomeActivity
+                        // Redirect to HomePageActivity
                         val intent = Intent(this, HomePageActivity::class.java)
                         startActivity(intent)
                         finish()

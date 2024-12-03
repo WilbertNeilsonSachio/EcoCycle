@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_transaksi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="22dp"
+    android:layout_marginRight="22dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:layout_constraintTop_toBottomOf="@id/whitebg_mission"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_daftar_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Transaksi"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Alamat: Jalan Raya No. 123"
+            android:textSize="14sp"
+            android:textColor="@color/softgrey" />
+
+        <TextView
+            android:id="@+id/tv_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tanggal: 03-12-2024"
+            android:textSize="14sp"
+            android:textColor="@color/softgrey" />
+
+        <TextView
+            android:id="@+id/tv_catatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Catatan: Ambil pukul 10 pagi"
+            android:textSize="14sp"
+            android:textColor="@color/softgrey" />
+
+        <TextView
+            android:id="@+id/tv_nomor_telp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Nomor Telepon: 081234567890"
+            android:textSize="14sp"
+            android:textColor="@color/softgrey" />
+
+        <TextView
+            android:id="@+id/tv_jumlah_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Jumlah Harga: Rp 50,000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/royalblue" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
